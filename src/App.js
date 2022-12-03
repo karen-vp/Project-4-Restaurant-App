@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NoPage from './components/pages/NoPage'
+import Contacto from './components/pages/Contacto'
+import Ubicacion from './components/pages/Ubicacion';
+import Container from './components/pages/Container';
+import Home from './components/pages/Home';
+import Menu from './components/shared/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element ={<Container/>}>
+          <Route index element={<Home/>}></Route>
+          <Route path='contact' element ={<Contacto/>}></Route>
+          <Route path='menu' element ={<Menu/>}></Route>
+          <Route path='direccion' element={<Ubicacion/>}></Route>
+          <Route path='*' element={<NoPage/>}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
