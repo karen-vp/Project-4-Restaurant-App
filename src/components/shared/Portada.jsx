@@ -6,7 +6,7 @@ function Portada() {
   return (
     <>
          <div>
-                <img src={imagenes.portadaform} alt="" id='portadaform' />
+                <img src="https://img.chilango.com/2022/10/7-3-847x1024.jpg" alt="" id='portadaform' />
         </div>
     </>
   )

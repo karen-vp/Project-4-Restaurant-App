@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../App.css';
 import Alert from 'react-bootstrap/Alert';
+import Portada from '../shared/Portada';
 import { useState } from 'react';
 import { db } from './../../config/firebase';
 import { addDoc, collection } from 'firebase/firestore'
@@ -48,9 +49,6 @@ function Formulario() {
           <textarea name="messageForm" rows="10" cols="40" placeholder="Escribe aquí tus comentarios" onChange={handleChange}></textarea>
 
           <input type="submit" value="Enviar" />
-
-
-
         </form>
       </div>
     </>
