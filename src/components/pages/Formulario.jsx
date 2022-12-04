@@ -48,7 +48,7 @@ function Formulario() {
           <label htmlFor="message">Mensaje y comentarios</label>
           <textarea name="messageForm" rows="10" cols="40" placeholder="Escribe aquí tus comentarios" onChange={handleChange}></textarea>
 
-          <input type="submit" value="Enviar" />
+          <input id="btn-enviar" type="submit" value="Enviar" />
         </form>
       </div>
     </>
