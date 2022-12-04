@@ -4,6 +4,7 @@ import React from 'react'
 import Header from '../shared/Header';
 import Footer from '../shared/Footer';
 import { Outlet, Link } from 'react-router-dom'
+import Sidemenu from '../shared/Sidemenu';
 
 function Container() {
     return (

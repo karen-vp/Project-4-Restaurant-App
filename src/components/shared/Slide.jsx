@@ -18,7 +18,7 @@ function Slide() {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src={imagenes.slide1}
+                                src='https://assets.unileversolutions.com/recipes-v2/236347.jpg'
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -29,7 +29,7 @@ function Slide() {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src={imagenes.slide2}
+                                src='https://bpprivilegeclub.com/blog/wp-content/uploads/2021/07/bigstock-Fresh-Mexican-Tacos-Al-Pastor-368745250-scaled.jpg'
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -40,7 +40,7 @@ function Slide() {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src={imagenes.slide3}
+                                src='https://cdn7.kiwilimon.com/recetaimagen/38988/50340.jpg'
                                 alt="First slide"
                             />
                             <Carousel.Caption>

@@ -9,6 +9,13 @@
 
 /*Componente Header*/
 
+a.ul-list-2, .ul-list-2>li {
+    text-decoration: none;
+    list-style: none;
+} 
+
+
+
 .nav-menu {
     /* background-color: rgb(255, 182, 122); */
     background-color: rgb(26, 30, 38);
@@ -29,6 +36,10 @@
     list-style: none;
 }
 
+.menuicon-container {
+    display: none;
+}
+
 .link-item {
     color: white;
     text-decoration: none;
@@ -43,6 +54,23 @@
 #logo {
     width: 130px;
 }
+
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+
+    .ul-list {
+        display: none;
+    }
+
+    .menuicon-container {
+        display: block;
+    }
+
+    img.menu-icon {
+        width: 24px;
+    }
+}
+
 
 /*Componente Jumbotron*/
 
@@ -110,12 +138,27 @@ h2 {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+
+    #portadajumbo {
+        width: 100%;
+    }
+
+    #text-container {
+        width: 100%;
+    }
+
+    .btn-main {
+        width: 100%;
+    }
+}
+
 /*Componente Carousel*/
-h3{
+h3 {
     padding-bottom: 20px;
 }
 
-.promo-description{
+.promo-description {
     width: 600px;
     text-align: center;
     display: flex;
@@ -137,6 +180,20 @@ h3{
     gap: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+    .promo-description {
+        width: 100%;
+    }
+
+    .carousel-container {
+        padding: 50px;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+}
+
 
 /*Componente Portada*/
 
@@ -149,9 +206,16 @@ h3{
 .contact-container {
 
     display: flex;
+    flex-flow: row wrap;
     padding: 100px;
     gap: 50px;
 
+}
+
+@media only screen and (max-width: 768px) {
+    #portadaform {
+        width: 100%;
+    }
 }
 
 /*Componente Formulario*/
@@ -189,12 +253,13 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 /*Componente Menu*/
-.menu-container{
+.menu-container {
     padding: 100px;
 }
 
-.card-container{
+.card-container {
     padding-top: 50px;
     display: flex;
     flex-flow: row wrap;
@@ -203,21 +268,23 @@ input[type=submit] {
     gap: 50px;
 }
 
-.card-item{
+.card-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between !important;
-    align-content: space-between !important;  
+    align-content: space-between !important;
     align-items: baseline;
 }
 
-.price-text{
+.price-text {
     font-weight: bold;
 }
-.card img{
+
+.card img {
     align-self: center;
     width: 200px;
 }
+
 /*Componente Footer*/
 
 div.gridfooter-container {

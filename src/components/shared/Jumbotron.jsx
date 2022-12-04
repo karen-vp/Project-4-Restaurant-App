@@ -7,7 +7,7 @@ function Jumbotron() {
     return (
         <div className='jumbotron'>
             <div>
-                <img src={imagenes.portadajumbo} alt="" id='portadajumbo' />
+                <img src='https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/03/Copia-de-Fotolia_186591557_Subscription_Monthly_XL.jpg' alt="" id='portadajumbo' />
             </div>
             <div id='text-container'>
                 <span className='text-1'>Bienvenido a nuestro</span>
