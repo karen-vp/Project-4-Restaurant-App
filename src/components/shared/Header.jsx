@@ -13,7 +13,7 @@ function Header() {
 
       <header>
         <nav className='nav-menu'>
-          <Link to='/restaurante'><img src={imagenes.logo} alt="logo" id='logo' /></Link>
+          <Link to='/'><img src={imagenes.logo} alt="logo" id='logo' /></Link>
           <ul className='ul-list'>
             <li>
               <Link to='contact' className='link-item'>Contacto</Link>
